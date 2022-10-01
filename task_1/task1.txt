@@ -1,0 +1,4 @@
+1) Rappresentare il diagramma dei casi d’uso - @see UCD01.jpg
+2) Rappresentare il modello di dominio - @see DomainModel_1.jpg
+3) Per ogni membro del gruppo, descrivere un caso d’uso a scelta in formato 
+	dettagliato - @see CasiUsoDettagliati.pdf

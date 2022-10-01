@@ -1,0 +1,17 @@
+Sulla base delle specifiche modellate nei Task precedenti, si vuole progettare
+un’architettura logica del sistema a strati rilassata, organizzandola in almeno
+tre strati: UI, Domain, e Services. Lo strato UI si occuperà di gestire le 
+interazioni da parte dell’utente delegando le operazioni allo strato sottostante.
+Lo strato Domain gestirà la logica applicativa. Infine, lo strato Services 
+offrirà i servizi tecnici necessari (ad esempio, la gestione del servizio 
+di posta elettronica e i pagamenti).
+
+1) Per ogni membro del gruppo, produrre un diagramma di sequenza per ogni 
+	operazione di sistema descritta in termini di contratto nel Task precedente.
+	@see SD[1-6].jpg
+2) Produrre un diagramma delle classi di progetto con i relativi package di 
+	appartenenza, aderenti all’architettura logica richiesta, in termini di 
+	strati e partizioni. Ove ritenuto utile, applicare i design pattern visti
+	a lezione; tali pattern andranno indicati in un file testuale, specificando
+	per ogni caso le classi del diagramma coinvolte.
+	@see patterns.txt DCP.jpg

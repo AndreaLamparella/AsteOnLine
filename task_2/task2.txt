@@ -1,0 +1,8 @@
+1) Per ogni membro del gruppo, scegliere un caso d’uso tra quelli descritti in
+	formato dettagliato nel Task 1 e modellarlo in termini di diagramma di 
+	sequenza di sistema. - @see SSD1.jpg SSD2.jpg SSD3.jpg
+2) Per ogni membro del gruppo, identificare due operazioni di sistema e	
+	descriverle in termini di contratti in un file di testo (@see Contratti.txt)
+	, adattando il 	modello di dominio con nuove classi, attributi e associazioni
+	quando opportuno (@see DomainModel_2.jpg). Da segnalare nel file di testo 
+	anche le modifiche apportate e le motivazioni per tali modifiche (@see changelog.txt).

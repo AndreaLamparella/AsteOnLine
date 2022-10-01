@@ -1,0 +1,24 @@
+Sulla base delle scelte di progettazione definite nei task precedenti, si vuole
+modellare il comportamento del sistema mediante macchine a stati, quindi procedere
+all’implementazione di parte del progetto.
+
+1. A seconda della dimensione del gruppo*, produrre i diagrammi di macchina a stati, 
+	modellando il comportamento degli oggetti di una specifica classe in modo 
+	trasversale per tutti i casi d’uso interessati dagli eventi seguenti:
+	
+	a. Utente - registrazione;
+	b. Asta – dalla creazione alla chiusura;
+	c. Oggetto – dalla creazione alla consegna.
+	
+2. Implementare in linguaggio Java lo scheletro di alcune fra le classi più 
+	significative del modello. In particolare, per ogni membro del gruppo, 
+	implementare una classe a scelta del layer del dominio limitandosi per i 
+	metodi alla firma e ad eventuali chiamate ad altri metodi; 
+	a tale scopo, risulta utile fare riferimento ai diagrammi di sequenza 
+	prodotti precedentemente. Qualora il numero di classi fosse inferiore al 
+	numero di membri del gruppo, sceglierne altre tra le classi a disposizione 
+	in tutti i layer.
+	
+*- Gruppi individuali  : produrre 1 fra i diagrammi richiesti
+ - Gruppi di 2/3 membri: produrre 2 fra i diagrammi richiesti
+ - Gruppi di 4/5 membri: produrre tutti i diagrammi richiesti

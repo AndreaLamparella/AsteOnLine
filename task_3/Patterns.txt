@@ -1,0 +1,25 @@
+I vari design pattern usati vengono brevementi descritti di seguito, raggruppati per package di appartenenza.
+
+Package Services:
+
+MailingList (Singleton): si suppone che sia sufficiente una singola istanza di MailingList per notificare gli
+utenti iscritti.
+Inventory (Singleton): essendo un database si suppone che si abbia una singola istanza
+ServiceFactory (Factory, Singleton): si occupa di fornire una unico punto di accesso per tutte le classi per
+creare gli Adapter.
+IPaymentAdapter, IDeliveryAdapter (Adapter): forniscono un'interfaccia nota per i relativi servizi esterni.
+
+Package Controllers:
+
+FacadeController (Facade, Singleton): fornisce un unico punto per far comunicare le classi della UI con i
+servizi del dominio.
+
+Package Domain:
+
+REController, AdminController (Singleton): forniscono un unico punto d'accesso per eseguire le
+operazioni dei relativi utenti.
+
+Package UI:
+
+UIRegisteredUser, UIAdmin (Observer): implementano l'operazione refresh che mima il design pattern
+Observer in quanto integra sia le funzioni di notify() che di update().

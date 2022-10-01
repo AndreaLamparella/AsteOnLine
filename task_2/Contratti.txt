@@ -1,0 +1,37 @@
+Operazione:  inserisciOfferta(offerta)
+Riferimenti: caso d'uso Fare Offerta
+Pre-condizi: deve esiste il bene b nell'asta a
+Post-cond:	 b.prezzoBase = offerta
+			 b è stato associato con l'Utente Reigistrato corrente ur
+
+Operazione:  creaAsta(nomeAsta, dataInizio, durata, listaOggetti)
+Riferimenti: caso d'uso Crea Asta
+Pre-condizi: listaOggetti non deve avere oggetti appartenenti ad altre 
+			 aste e non devono essere stati aggiudicati
+			 non deve esistere un'asta con lo stesso nomeAsta
+Post-cond:	 viene creata una istanza dell'Asta a 
+			 l'Asta a è stata associata con l'Admin admin
+			 I beni b della listaOggetti sono stati associati all'Asta a
+
+Operazione:  effettuaPagamento(ammontare)
+Riferimenti: caso d'uso Checkout
+Pre-condizi: deve essere stato vinto uno o più Beni b
+Post-cond:   i beni b sono stati rimossi dall'Inventario
+
+Operazione:  inserisciBene(beneAsta)
+Riferimenti: caso d'uso Gestione Oggetti
+Pre-condizi: Nessuno
+Post-cond:   il Bene Asta b è stato aggiunto all'Inventario
+			 il Bene Asta b è stato associato con l'Utente Registrato u
+
+Operazione:  inserimentoParametri(categoria, nome, decrizione)
+Riferimenti: caso d'uso Effettua Ricerca
+Pre-condizi: Nessuna
+Post-cond:	 L'Utente Generico u è stato associato alla Ricerca r
+			 La Ricerca r è stata associata all'Inventario
+
+Operazione:  modificaCategoria(nome, descrizione)
+Riferimenti: caso d'uso Gestione Categorie
+Pre-condizi: deve esistere una Categoria c
+Post-cond:	 c.nome = nome
+			 c.descrizione = descrizione

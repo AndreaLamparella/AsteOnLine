@@ -1,0 +1,32 @@
+Dal Modello di Dominio è stata rimossa il datatype Categoria ed è stata creata la classe corrispondente.
+Aggiunta l'associazione Admin gestisce Categoria.
+
+Bene Asta, in seguito alla creazione della classe Categoria, non ha più l'attributo Categoria. 
+È stata creata l'associazione Bene Asta appartiene/descrive Categoria
+
+Bene Asta ha un nuovo attributo aggiudicato di tipo booleano. Questo attributo permette di stabilire
+se un'istanza di Bene Asta è stata vinta o meno ad un asta, e quindi se è in attesa che l'Utente Registrato
+effettui la procedura di pagamento o se è possibile inserirlo in una nuova asta.
+
+L'associazione Bene Asta appartiene Asta è ora Bene Asta comprende Asta. 
+
+Viene aggiunto un nuovo attributo id alla classe Bene Asta al fine di identificare in modo univoco
+le sue istanze.
+
+L'associazione Utente Registrato inserisce Bene Asta è ora Utente Registrato gestisce Bene Asta.
+
+È stata creata la classe Inventario.
+Nella stesura dei contratti è emerso che vi erano diverse operazioni di sistema che facevano riferimento
+al sistema Inventario. Pertanto è stata introdotta questa classe per far fronte a questa necessità.
+
+La classe inventario presenta, quindi, queste nuove associazioni:
+1. Inventario associa Categoria
+2. Inventario traccia Ricerca
+3. Inventario inserito Bene Asta
+4. Inventario inserito Asta
+5. Inventario aggiorna Ordine
+
+L'associazione Inventario traccia Ricerca è stata introdotta poiché si vuole mantenere uno storico delle ricerche
+effettuate, potendo queste essere un utile strumento per l'indagine statistica.
+
+
